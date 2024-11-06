@@ -1,0 +1,206 @@
+/* Réinitialisation des styles de base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7fd1fd;
+  /* Fond bleu */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  /* Bleu profond */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  color: #ffffff;
+  /* Texte blanc */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #8ed4f1;
+  /* Bleu clair pour le survol */
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.image-center img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #f2faff;
+  /* Bordure bleue */
+}
+
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2faff;
+  /* Fond de l'en-tête bleu profond */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2faff;
+  /* Fond bleu très clair pour les lignes paires */
+}
+
+form {
+  width: 80%;
+  margin: 20px auto;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #95cde5;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #42a85f;
+  /* Bouton vert */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2c8745;
+  /* Vert foncé pour le survol */
+}
+
+.search-container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search-container input[type="submit"] {
+  background-color: #42a85f;
+  /* Bouton vert */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container input[type="submit"]:hover {
+  background-color: #2c8745;
+  /* Vert foncé pour le survol */
+}
+
+/* Petits appareils (Smartphones) */
+@media only screen and (max-width: 480px) {
+  /* Styles des boutons pour les écrans jusqu'à 480px de largeur */
+  button {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+}
+
+/* Appareils mobiles (Smartphones en mode paysage et petites tablettes) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles des boutons pour les écrans de 481px à 767px de largeur */
+  button {
+      padding: 10px 16px;
+      font-size: 16px;
+  }
+}
+
+/* Tablettes et appareils mobiles de taille moyenne */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles des boutons pour les écrans de 768px à 991px de largeur */
+  button {
+      padding: 12px 20px;
+      font-size: 18px;
+  }
+}
+
+/* Ordinateurs portables et petits écrans d'ordinateurs de bureau */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Styles des boutons pour les écrans de 992px à 1199px de largeur */
+  button {
+      padding: 14px 24px;
+      font-size: 20px;
+  }
+}
+
+/* Écrans d'ordinateurs de bureau et ordinateurs portables de taille moyenne */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* Styles des boutons pour les écrans de 1200px à 1439px de largeur */
+  button {
+      padding: 16px 28px;
+      font-size: 22px;
+  }
+}
+
+/* Grands écrans d'ordinateurs de bureau et ordinateurs portables de grande taille */
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  /* Styles des boutons pour les écrans de 1440px à 1919px de largeur */
+  button {
+      padding: 18px 32px;
+      font-size: 24px;
+  }
+}
+
+/* Écrans d'ordinateurs de bureau extra larges et écrans de télévision */
+@media only screen and (min-width: 1920px) {
+  /* Styles des boutons pour les écrans de 1920px et plus de largeur */
+  button {
+      padding: 20px 36px;
+      font-size: 26px;
+  }
+}

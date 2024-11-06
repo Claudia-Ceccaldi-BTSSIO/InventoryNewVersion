@@ -1,0 +1,105 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+/* Petits appareils (Smartphones) */
+@media only screen and (max-width: 480px) {
+    /* Styles des boutons pour les écrans jusqu'à 480px de largeur */
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Appareils mobiles (Smartphones en mode paysage et petites tablettes) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Styles des boutons pour les écrans de 481px à 767px de largeur */
+    button {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+/* Tablettes et appareils mobiles de taille moyenne */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles des boutons pour les écrans de 768px à 991px de largeur */
+    button {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+}
+
+/* Ordinateurs portables et petits écrans d'ordinateurs de bureau */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles des boutons pour les écrans de 992px à 1199px de largeur */
+    button {
+        padding: 14px 24px;
+        font-size: 20px;
+    }
+}
+
+/* Écrans d'ordinateurs de bureau et ordinateurs portables de taille moyenne */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    /* Styles des boutons pour les écrans de 1200px à 1439px de largeur */
+    button {
+        padding: 16px 28px;
+        font-size: 22px;
+    }
+}
+
+/* Grands écrans d'ordinateurs de bureau et ordinateurs portables de grande taille */
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+    /* Styles des boutons pour les écrans de 1440px à 1919px de largeur */
+    button {
+        padding: 18px 32px;
+        font-size: 24px;
+    }
+}
+
+/* Écrans d'ordinateurs de bureau extra larges et écrans de télévision */
+@media only screen and (min-width: 1920px) {
+    /* Styles des boutons pour les écrans de 1920px et plus de largeur */
+    button {
+        padding: 20px 36px;
+        font-size: 26px;
+    }
+}

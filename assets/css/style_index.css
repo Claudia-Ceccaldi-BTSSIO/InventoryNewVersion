@@ -1,0 +1,278 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0077b6;
+    /* Fond bleu */
+    color: #006266;
+    /* Couleur de texte standard */
+    display: flex;
+    flex-direction: column; /* Modification pour centrer le footer */
+    min-height: 100vh;
+    justify-content: space-between; /* Modification pour centrer le footer */
+}
+
+.no-bullets {
+    list-style-type: none;
+    /* Supprime les puces */
+    padding: 0;
+    /* Supprime l'indentation par défaut */
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    /* Ajout pour la responsivité */
+    margin: auto;
+    /* Centrage horizontal */
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    color: #3f51b5;
+}
+
+h2 {
+    margin-bottom: 1em;
+    color: #3f51b5;
+}
+
+/* Styles pour les boutons */
+.button-container {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    gap: 10px; /* Espacement entre les boutons */
+}
+
+.btn {
+    background-color: #ff7043;
+    /* Couleur orange */
+    color: #210202;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    /* Bords arrondis */
+    text-decoration: none;
+    /* Enlève le soulignement des liens */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover,
+.inscription-btn:hover {
+    background-color: #ff5722;
+    /* Orange plus foncé au survol */
+    transform: scale(1.05);
+    /* Légère augmentation de la taille au survol */
+}
+
+/* Styles pour l'encart du message de bienvenue */
+.welcome-container {
+    background-color: white;
+    /* Fond blanc */
+    padding: 20px;
+    /* Espacement intérieur */
+    margin: 20px 0;
+    /* Espacement extérieur */
+    border-radius: 10px;
+    /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Ombre subtile */
+    position: relative;
+    /* Nécessaire pour la position du contour lumineux */
+    animation: blinking-border 1.5s infinite;
+}
+
+/* Animation du contour lumineux */
+@keyframes blinking-border {
+    0% {
+        box-shadow: 0 0 10px 2px #ffffff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px 3px #abcdef;
+    }
+
+    100% {
+        box-shadow: 0 0 10px 2px #ffffff;
+    }
+}
+
+.encart-lumineux {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease;
+    /* Transition pour l'effet de zoom */
+    cursor: pointer;
+}
+
+.encart-lumineux:hover {
+    transform: scale(1.05);
+    /* Zoom au survol */
+}
+
+.error_message {
+    background-color: #f8d7da;
+    /* Couleur de fond rouge pâle */
+    color: #721c24;
+    /* Couleur de texte rouge foncé */
+    border: 1px solid #f5c6cb;
+    /* Bordure rouge */
+    padding: 10px 20px;
+    /* Espacement intérieur */
+    border-radius: 5px;
+    /* Coins arrondis */
+    margin-bottom: 10px;
+    /* Marge inférieure pour l'espacement */
+}
+
+.btn-zoom.welcome-container {
+    background-color: white;
+    color: #a9dfbf; /* Couleur de texte verte adoucie */
+    border: 2px solid #9daaa2; /* Bordure verte adoucie */
+    padding: 15px 30px;
+    border-radius: 10px; /* Bords arrondis */
+    font-weight: bold;
+    margin-bottom: 20px; /* Marge inférieure pour l'espacement */
+    transition: transform 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-zoom.welcome-container:hover {
+    transform: scale(1.1); /* Légère augmentation de la taille au survol */
+    border-color: #d4efdf; /* Bordure punch au survol, adoucie */
+    color: #d4efdf; /* Couleur de texte punch au survol, adoucie */
+}
+
+/* Style pour le message de bienvenue */
+.hello {
+    text-align: center;
+    font-size: 16px;
+    /* Ajustez la taille du texte selon vos préférences */
+    color: #0077b6;
+    /* Couleur de texte pro */
+    margin-top: 10px;
+    /* Décalage vers le haut pour éviter de chevaucher le bouton */
+}
+.inscription-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.inscription-btn:hover {
+    background-color: #45a049;
+}
+
+.inscription-container {
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+}
+
+.button-container {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    gap: 10px; /* Espacement entre les boutons */
+    text-align: center; /* Ajout pour centrer les boutons horizontalement */
+}
+
+/* Ajout des Media Queries */
+@media (max-width: 480px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Style pour le footer */
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-zoom.welcome-container {
+    background-color: white;
+    color: #0077b6;
+    /* Couleur de texte pro */
+    border: 2px solid #0077b6;
+    /* Bordure pro */
+    padding: 15px 30px;
+    border-radius: 10px;
+    /* Bords arrondis */
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Marge inférieure pour l'espacement */
+    transition: transform 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-zoom.welcome-container:hover {
+    transform: scale(1.1);
+    /* Légère augmentation de la taille au survol */
+    border-color: #ff7043;
+    /* Bordure punch au survol */
+    color: #ff7043;
+    /* Couleur de texte punch au survol */
+}

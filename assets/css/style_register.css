@@ -1,0 +1,197 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Fond gris clair */
+    color: #212529; /* Couleur de texte standard */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Fond blanc */
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    width: 400px;
+    max-width: 90%;
+}
+
+h2 {
+    margin-bottom: 1em;
+    color: #007bff; /* Bleu vif */
+}
+
+/* Styles pour les champs de formulaire */
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #6c757d; /* Couleur de texte grise */
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Bordure gris clair */
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+/* Styles pour le bouton d'inscription */
+input[type="submit"] {
+    background-color: #007bff; /* Bleu vif */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Styles pour le message d'erreur */
+.error_message {
+    
+    color: #721c24; /* Rouge foncé */
+    
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styles pour l'encart du message de bienvenue */
+.welcome-container {
+    background-color: #ffffff; /* Fond blanc */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    position: relative;
+    animation: blinking-border 1.5s infinite;
+    cursor: pointer;
+}
+
+/* Animation du contour lumineux */
+@keyframes blinking-border {
+    0% {
+        box-shadow: 0 0 10px 2px #ffffff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px 3px #abcdef;
+    }
+
+    100% {
+        box-shadow: 0 0 10px 2px #ffffff;
+    }
+}
+
+/* Style pour le message de bienvenue */
+.hello {
+    text-align: center;
+    font-size: 16px;
+    color: #007bff; /* Bleu vif */
+    margin-top: 10px;
+}
+
+/* Style pour le bouton d'inscription */
+.inscription-btn {
+    background-color: #007bff; /* Bleu vif */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.inscription-btn:hover {
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Petits appareils (Smartphones) */
+@media only screen and (max-width: 480px) {
+    /* Styles des boutons pour les écrans jusqu'à 480px de largeur */
+    input[type="submit"] {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Appareils mobiles (Smartphones en mode paysage et petites tablettes) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Styles des boutons pour les écrans de 481px à 767px de largeur */
+    input[type="submit"] {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+/* Tablettes et appareils mobiles de taille moyenne */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles des boutons pour les écrans de 768px à 991px de largeur */
+    input[type="submit"] {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+}
+
+/* Ordinateurs portables et petits écrans d'ordinateurs de bureau */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles des boutons pour les écrans de 992px à 1199px de largeur */
+    input[type="submit"] {
+        padding: 14px 24px;
+        font-size: 20px;
+    }
+}
+
+/* Écrans d'ordinateurs de bureau et ordinateurs portables de taille moyenne */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    /* Styles des boutons pour les écrans de 1200px à 1439px de largeur */
+    input[type="submit"] {
+        padding: 16px 28px;
+        font-size: 22px;
+    }
+}
+
+/* Grands écrans d'ordinateurs de bureau et ordinateurs portables de grande taille */
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+    /* Styles des boutons pour les écrans de 1440px à 1919px de largeur */
+    input[type="submit"] {
+        padding: 18px 32px;
+        font-size: 24px;
+    }
+}
+
+/* Écrans d'ordinateurs de bureau extra larges et écrans de télévision */
+@media only screen and (min-width: 1920px) {
+    /* Styles des boutons pour les écrans de 1920px et plus de largeur */
+    input[type="submit"] {
+        padding: 20px 36px;
+        font-size: 26px;
+    }
+}

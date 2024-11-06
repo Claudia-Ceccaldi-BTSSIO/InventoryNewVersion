@@ -1,0 +1,143 @@
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #0077b6;
+   /* Fond plus clair pour le contraste */
+   color: #333;
+   margin: 0;
+   padding: 0;
+ }
+
+ nav {
+   background-color: #333;
+   /* Fond plus foncé pour la navigation */
+   padding: 10px 0;
+   /* ... autres styles de navigation ... */
+ }
+
+ .update-container {
+   background-color: white;
+   width: 60%;
+   /* Ajuster selon les besoins */
+   margin: 30px auto;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .update-form-group {
+   margin-bottom: 15px;
+ }
+
+ .update-form-group label {
+   display: block;
+   margin-bottom: 5px;
+ }
+
+ .update-form-group input[type="text"],
+ .update-form-group input[type="number"],
+ .update-form-group textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+
+ .update-form-group textarea {
+   height: 100px;
+   /* Hauteur du textarea */
+ }
+
+ .update-form-action {
+   text-align: right;
+ }
+
+ .update-form-action input[type="submit"] {
+   background-color: #5cb85c;
+   /* Couleur verte */
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ .update-form-action input[type="submit"]:hover {
+   background-color: #4cae4c;
+   /* Vert plus foncé au survol */
+ }
+
+ .error-message {
+   color: #ff3860;
+   /* Rouge */
+   background-color: #ffe5e7;
+   /* Rouge clair */
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 1px solid #ff3860;
+   border-radius: 4px;
+ }
+
+ /* Petits appareils (Smartphones) */
+@media only screen and (max-width: 480px) {
+  /* Styles des boutons pour les écrans jusqu'à 480px de largeur */
+  button {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+}
+
+/* Appareils mobiles (Smartphones en mode paysage et petites tablettes) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles des boutons pour les écrans de 481px à 767px de largeur */
+  button {
+      padding: 10px 16px;
+      font-size: 16px;
+  }
+}
+
+/* Tablettes et appareils mobiles de taille moyenne */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles des boutons pour les écrans de 768px à 991px de largeur */
+  button {
+      padding: 12px 20px;
+      font-size: 18px;
+  }
+}
+
+/* Ordinateurs portables et petits écrans d'ordinateurs de bureau */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Styles des boutons pour les écrans de 992px à 1199px de largeur */
+  button {
+      padding: 14px 24px;
+      font-size: 20px;
+  }
+}
+
+/* Écrans d'ordinateurs de bureau et ordinateurs portables de taille moyenne */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* Styles des boutons pour les écrans de 1200px à 1439px de largeur */
+  button {
+      padding: 16px 28px;
+      font-size: 22px;
+  }
+}
+
+/* Grands écrans d'ordinateurs de bureau et ordinateurs portables de grande taille */
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  /* Styles des boutons pour les écrans de 1440px à 1919px de largeur */
+  button {
+      padding: 18px 32px;
+      font-size: 24px;
+  }
+}
+
+/* Écrans d'ordinateurs de bureau extra larges et écrans de télévision */
+@media only screen and (min-width: 1920px) {
+  /* Styles des boutons pour les écrans de 1920px et plus de largeur */
+  button {
+      padding: 20px 36px;
+      font-size: 26px;
+  }
+}
